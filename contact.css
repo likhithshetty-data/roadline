@@ -1,0 +1,195 @@
+/* /* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+header {
+    background:whitesmoke;
+    color: #0c0c0c;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px; 
+    margin-right: 15px; 
+}
+
+.logo-title {
+    color:black; 
+    font-size: 24px; 
+    font-weight: bold; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative; 
+    margin: 0 40px;
+}
+
+nav ul li a {
+    color:black;
+    text-decoration: none;
+}
+
+.dropdown {
+    display: none; 
+    position: absolute; 
+    background:whitesmoke;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+nav ul li:hover .dropdown {
+    display: block; 
+}
+
+.dropdown li {
+    margin: 5px 10px;
+} 
+
+.dropdown li a {
+    color: black; 
+}
+
+/* Contact section styles */
+.contact-us {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    
+}
+
+.map iframe {
+    border: 0;
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    max-width: 400px;
+    flex: 1 1 300px; /* Adjust flex properties as needed */
+}
+
+.contact-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #333;
+}
+
+.leave-message {
+    flex: 1 1 300px; /* Adjust flex properties as needed */
+}
+
+.leave-message h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.leave-message form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.leave-message form input,
+.leave-message form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.leave-message form button {
+    padding: 15px 20px;
+    border: none;
+    background-color: #ffc107;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.leave-message form button:hover {
+    background-color: #e0a800;
+}
+.leave-message form img{
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+@media (max-width: 400px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    nav {
+        text-align: center;
+        background-color: white;
+        width: 100%;
+    }
+    nav ul li {
+        position: relative;
+        margin: 0 19px;
+    
+    }
+    
+    .logo img {
+        width: 80px;
+        height: 50px;
+    }
+
+    .logo-title {
+        font-size: 20px;
+    }
+}

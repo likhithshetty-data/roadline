@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-weight: bold;
+  }
+  
+  header {
+    background: whitesmoke;
+    color: #0c0c0c;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: 70px;
+    margin-left: 15px;
+  }
+  
+  .logo-title {
+    color: #0c0c0c;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    position: relative;
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #131212;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    z-index: 10;
+  }
+  
+  nav ul li:hover .dropdown {
+    display: block;
+  }
+  
+  .dropdown li {
+    margin: 5px 10px;
+  }
+  
+  .dropdown li a {
+    color: #030303;
+  }
+  
+  #hero {
+    background-image: url('back4.jfif');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    animation: change 30s infinite ease-in-out;
+  }
+  
+  @keyframes change {
+    0% { background-image: url('in1.jpg'); }
+    25% { background-image: url('in5.jpg'); }
+    50% { background-image: url('in3.jpg'); }
+    75% { background-image: url('jcb.jpeg'); }
+    100% { background-image: url('jcdandtruck.jpg'); }
+  }
+  
+  section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .services {
+    padding: 50px 20px;
+  }
+  
+  .services h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+  }
+  
+  .services p {
+    margin-bottom: 50px;
+    color: #555;
+  }
+  
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .service-card img {
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .service-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .service-card p {
+    color: #666;
+    margin-bottom: 20px;
+    font-weight: normal;
+  }
+  
+  .service-card button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffc107;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .service-card button:hover {
+    background-color: #e0a800;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  @media (max-width: 400px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav {
+      text-align: center;
+      background-color: white;
+      width: 100%;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .logo img {
+      width: 80px;
+      height: 50px;
+    }
+  
+    .logo-title {
+      font-size: 20px;
+    }
+  
+    .service-cards {
+      width: 100%;
+    }
+  
+    .service-card {
+      width: 90%;
+    }
+  }
+  
